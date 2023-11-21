@@ -5,6 +5,6 @@
 <br/>
 <hr/>
 <section display="flex">
-<img src="Screenshot (163).png" />
+<img src="image/Screenshot (163).png" />
 </section>
 <h3 align="center"><a href="https://negar-karimnejad.github.io/rock-paper-scissors/" target="_blank">Your turn 🪄</a></h3>

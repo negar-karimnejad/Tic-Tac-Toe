@@ -7,35 +7,62 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  background-color: rgb(179, 15, 97);
 }
 #gameboard {
   width: 300px;
   height: 300px;
-  background-color: black;
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
 }
 .square {
   width: 96px;
   height: 96px;
-  background-color: white;
-  border: 2px solid black;
+  background-color: rgb(179, 15, 97);
+  border: 2px solid rgb(91, 6, 49);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.square:nth-child(1) {
+  border-top: none;
+  border-left: none;
+}
+.square:nth-child(2) {
+  border-top: none;
+}
+.square:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+.square:nth-child(4) {
+  border-left: none;
+}
+.square:nth-child(6) {
+  border-right: none;
+}
+.square:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+.square:nth-child(8) {
+border-bottom: none;
+}
+.square:nth-child(9) {
+border-bottom: none;
+border-right: none;
+}
 .circle {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  border: 15px solid blue;
+  border: 15px solid white;
 }
 .cross,
 .cross::after {
   width: 30px;
   height: 80px;
-  background-color: red;
+  background-color: rgb(65, 0, 32);
   position: relative;
   transform: rotate(45deg);
 }
@@ -56,13 +83,18 @@ body {
 .restart {
   padding: 0.5rem 0.8rem;
   font-size: 1.2rem;
-  background-color: black;
+  background-color: rgb(230, 0, 115);
   color: white;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   display: none;
+  border: none;
+  transition: all 200ms ease-in-out;
 }
 .restart:hover {
   background-color: white;
   color: black;
+}
+.text{
+color: white;
 }
